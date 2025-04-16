@@ -1,0 +1,19 @@
+<div class="card p-5" style="position: fixed; top: 20px; right: 20px; max-width: 400px; border-radius: 15px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+    <h2 class="card-title text-center mb-4">Add Contact</h2>
+    <form (ngSubmit)="addContact()">
+      <div class="mb-3">
+        <input [(ngModel)]="firstName" name="firstName" placeholder="First Name" required class="form-control" />
+      </div>
+      <div class="mb-3">
+        <input [(ngModel)]="lastName" name="lastName" placeholder="Last Name" required class="form-control" />
+      </div>
+      <div class="mb-3">
+        <input [(ngModel)]="email" name="email" placeholder="Email" required class="form-control" />
+      </div>
+      <div class="mb-3">
+        <input [(ngModel)]="phone" name="phone" placeholder="Phone" required class="form-control" />
+      </div>
+      <button class="btn btn-primary" type="submit">Add</button>
+    </form>
+  </div>
+  
